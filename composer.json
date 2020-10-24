@@ -1,15 +1,20 @@
 {
-    "name": "jorge/codelytv-clone",
-    "license": "MIT",
-    "type": "project",
-    "description": "Clone of codelytv pro platform applying Domain-Driven Design, Hexagonal Architecture and CQRS in a Monorepository",
-    "authors": [
-        {
-            "name": "jorgechavezrnd",
-            "email": "jorgechavezrnd@gmail.com"
-        }
-    ],
-    "require": {
-        "php": "^7.4"
+  "name": "jorge/codelytv-clone",
+  "license": "MIT",
+  "type": "project",
+  "description": "Clone of codelytv pro platform applying Domain-Driven Design, Hexagonal Architecture and CQRS in a Monorepository",
+  "authors": [
+    {
+      "name": "jorgechavezrnd",
+      "email": "jorgechavezrnd@gmail.com"
     }
+  ],
+  "require": {
+    "php": "^7.4",
+
+    "ext-apcu": "*",
+    "ext-json": "*",
+    "ext-zend-opcache": "*",
+    "ext-pdo": "*"
+  }
 }
