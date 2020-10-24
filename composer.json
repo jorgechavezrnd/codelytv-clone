@@ -1,7 +1,8 @@
 {
     "name": "jorge/codelytv-clone",
-    "description": "Clone of codelytv pro platform with DDD",
     "license": "MIT",
+    "type": "project",
+    "description": "Clone of codelytv pro platform applying Domain-Driven Design, Hexagonal Architecture and CQRS in a Monorepository",
     "authors": [
         {
             "name": "jorgechavezrnd",
