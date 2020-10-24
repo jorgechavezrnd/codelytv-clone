@@ -1,0 +1,14 @@
+{
+    "name": "jorge/codelytv-clone",
+    "description": "Clone of codelytv pro platform with DDD",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jorgechavezrnd",
+            "email": "jorgechavezrnd@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    }
+}
