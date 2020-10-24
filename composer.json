@@ -25,5 +25,18 @@
     "ext-xdebug": "*",
 
     "roave/security-advisories": "dev-latest"
-  }
+  },
+  "autoload": {
+    "psr-4": {
+      "CodelyTv\\Apps\\Mooc\\Backend\\": "apps/mooc/backend/src",
+
+      "CodelyTv\\": ["src"]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CodelyTv\\Tests\\": ["tests/src"]
+    }
+  },
+  "minimum-stability": "stable"
 }
