@@ -1,0 +1,16 @@
+services:
+  _defaults:
+    autoconfigure: true
+    autowire: true
+
+
+  CodelyTv\Apps\Mooc\Backend\Controller\:
+    resource: '../src/Controller'
+    tags: ['controller.service_arguments']
+
+  # Wire
+  CodelyTv\Shared\:
+    resource: '../../../../src/Shared'
+
+  CodelyTv\Mooc\:
+    resource: '../../../../src/Mooc'
