@@ -18,7 +18,7 @@ final class MinkHelper
         $this->session = $session;
     }
 
-    public function sendRequest($method, $url, array $optionalParams = []): Crawler
+    public function sendRequest(string $method, string $url, array $optionalParams = []): Crawler
     {
         $defaultOptionalParams = [
             'parameters'    => [],

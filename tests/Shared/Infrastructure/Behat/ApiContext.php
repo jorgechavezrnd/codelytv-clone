@@ -47,7 +47,7 @@ final class ApiContext extends RawMinkContext
         }
     }
 
-    private function sanitizeOutput(string $output)
+    private function sanitizeOutput(string $output): string
     {
         return json_encode(json_decode(trim($output), true));
     }
