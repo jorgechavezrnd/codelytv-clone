@@ -42,7 +42,7 @@ final class ApiContext extends RawMinkContext
 
         if ($expected !== $actual) {
             throw new RuntimeException(
-                sprintf("The output does not match!\n\n-- Expected:\n%s\n\n-- Actual:\n%s", $expected, $actual)
+                sprintf("The output does not match!\n\n-- Expected:\n%s\n\n-- Actual:\n%s\n\n", $expected, $actual)
             );
         }
     }
