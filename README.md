@@ -2,7 +2,7 @@
 
 ### Command for start mooc backend application server
 ```
-php -S localhost:8090 apps/mooc/backend/public/index.php
+php -S 127.0.0.1:8090 apps/mooc/backend/public/index.php
 ```
 
 ### Command for run mooc backend application acceptance tests
