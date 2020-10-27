@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  mooc_backend_php:
+    container_name: codelytv-codelytv_clone-mooc_backend-php
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8030:8030"
+    volumes:
+      - .:/app:delegated
+    command: symfony serve --dir=apps/mooc/backend/public --port=8030 --force-php-discovery
