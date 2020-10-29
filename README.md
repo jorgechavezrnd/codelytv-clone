@@ -23,7 +23,7 @@
 ### 🔥 Application execution
 
 1. Install all the dependencies and bring up the project with Docker executing: `make build`
-2. Then you'll have 3 apps available (2 APIs and 1 Frontend):
+2. Then you'll have 1 app available (1 API):
    1. [Mooc Backend](apps/mooc/backend): http://localhost:8030/health-check
 
 ### ✅ Tests execution
