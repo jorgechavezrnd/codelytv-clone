@@ -8,3 +8,6 @@ services:
 
   CodelyTv\Tests\:
     resource: '../../../../tests'
+
+  # Instance selector
+  CodelyTv\Shared\Domain\RandomNumberGenerator: '@CodelyTv\Tests\Shared\Infrastructure\ConstantRandomNumberGenerator'

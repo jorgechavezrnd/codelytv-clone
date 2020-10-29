@@ -8,6 +8,13 @@
   🐘🎯 Clone of codelytv pro platform applying Domain-Driven Design, Hexagonal Architecture and CQRS in a Monorepository
 </h1>
 
+<p align="center">
+    <a href="https://github.com/jorgechavezrnd"><img src="https://img.shields.io/badge/jorgechavezrnd-OS-green.svg?style=flat-square" alt="jorgechavezrnd"/></a>
+    <a href="http://pro.codely.tv"><img src="https://img.shields.io/badge/CodelyTV-PRO-black.svg?style=flat-square" alt="CodelyTV Courses"/></a>
+    <a href="#"><img src="https://img.shields.io/badge/Symfony-5.0-purple.svg?style=flat-square&logo=symfony" alt="Symfony 5.0"/></a>
+    <a href="https://github.com/jorgechavezrnd/codelytv-clone/actions"><img src="https://github.com/jorgechavezrnd/codelytv-clone/workflows/CI/badge.svg" alt="CI pipeline status" /></a>
+</p>
+
 ## 🚀 Environment Setup
 
 ### 🐳 Needed tools

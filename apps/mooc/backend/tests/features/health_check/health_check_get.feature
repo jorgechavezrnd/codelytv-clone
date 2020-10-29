@@ -8,6 +8,7 @@ Feature: Api status
     Then the response content should be:
     """
     {
-      "mooc-backend": "ok"
+      "mooc-backend": "ok",
+      "rand": 1
     }
     """
