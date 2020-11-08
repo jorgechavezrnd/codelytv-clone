@@ -15,3 +15,8 @@ mooc_backend:
       paths: [ apps/mooc/backend/tests/features/health_check ]
       contexts:
         - CodelyTv\Tests\Shared\Infrastructure\Behat\ApiContext
+
+    courses:
+      paths: [ apps/mooc/backend/tests/features/courses ]
+      contexts:
+        - CodelyTv\Tests\Shared\Infrastructure\Behat\ApiContext

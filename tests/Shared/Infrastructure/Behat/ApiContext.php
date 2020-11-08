@@ -33,6 +33,14 @@ final class ApiContext extends RawMinkContext
     }
 
     /**
+     * @Given I send a :method request to :url with body:
+     */
+    public function iSendARequestToWithBody(string $method, string $url, PyStringNode $body): void
+    {
+        $this->request->sendRequestWithPyStringNode($method, $this->locatePath($url), $body);
+    }
+
+    /**
      * @Then the response content should be:
      */
     public function theResponseContentShouldBe(PyStringNode $expectedResponse): void
@@ -43,6 +51,36 @@ final class ApiContext extends RawMinkContext
         if ($expected !== $actual) {
             throw new RuntimeException(
                 sprintf("The output does not match!\n\n-- Expected:\n%s\n\n-- Actual:\n%s\n\n", $expected, $actual)
+            );
+        }
+    }
+
+    /**
+     * @Then the response status code should be :expectedResponseCode
+     */
+    public function theResponseStatusCodeShouldBe(int $expectedResponseCode): void
+    {
+        if ($this->minkSession->getStatusCode() !== $expectedResponseCode) {
+            throw new RuntimeException(
+                sprintf(
+                    'The status code <%s> does not match the expected <%s>',
+                    $this->minkSession->getStatusCode(),
+                    $expectedResponseCode
+                )
+            );
+        }
+    }
+
+    /**
+     * @Then the response should be empty
+     */
+    public function theResponseShouldBeEmpty(): void
+    {
+        $actual = trim($this->sessionHelper->getResponse());
+
+        if (!empty($actual)) {
+            throw new RuntimeException(
+                sprintf("The outputs is not empty, Actual:\n%s", $actual)
             );
         }
     }
